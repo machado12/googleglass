@@ -1,6 +1,6 @@
 # Google Glass
 
-[GoogleGlass](https://github.com/machado12/googleglass)
+[GoogleGlass](https://machado12.github.io/googleglass/index.html)
 
 <img src="/imagens/glass1.png" >
 <img src="/imagens/glass2.png" >
