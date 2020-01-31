@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="description" content="Site Google-Glass - Conteúdo feito pelo Curso em Vídeo, Professor Gustavo Guanabara - Curso de HTML 5">
+   <meta name="keywords" content="google glass, Professor Gustavo Guanabara, Curso em Vídeo, curso de HTML 5 Guanabara, óculos do google, O Google Glass é um dispositivo semelhante a um par de óculos, Project Glass">
+   <meta name="robots" content="index,follow">
+   <meta name="author" content="Google Glass">
+   <meta name="rating" content="General">
+   <meta name="revisit-after" content="7 days">
+   <link rel="canonical" href="">
+
+
+   <title>Google Glass - Odirlei Machado</title>
+   <link rel="icon" href="imagens/glass-oculos-preto-peq.png">
+ 
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   
+   <link rel="stylesheet" href="css/estilo.css">
+   <link rel="stylesheet" href="css/estilo-1.css">
+   <link rel="stylesheet" href="css/form.css">
+   <script src="javascript/top.js"></script>
+   <script src="javascript/my-functions.js"></script>
+
+   <script>
+   
+      function calctotal() {
+         var qtd = parseInt(document.getElementById('cQtd').value);
+         tot = qtd  * 1500;
+         document.getElementById('cTot').value = tot;
+      }
+    
+   </script>
+
+</head>
+<body>
+
+   <div class="container">
+   <div class="row">
+   <div class="col-xs-4">
+   <div id="interface">         
+<header id="cabecalho">
+   <div class="topnav" id="myTopnav">  <!-- tirei esse id="menu" daqui -->
+      <a onmouseover="mudaFoto('imagens/home.png')" onmouseout="mudaFoto('imagens/contato.png')" href="index.html" class="active">Google Glass</a>
+      <a onmouseover="mudaFoto('imagens/especificacoes.png')" onmouseout="mudaFoto('imagens/glass-oculos-preto-peq.png')" href="specs.html">Especificações</a>
+      <a onmouseover="mudaFoto('imagens/fotos.png')" onmouseout="mudaFoto('imagens/contato.png')" href="fotos.html">Fotos</a>
+      <a onmouseover="mudaFoto('imagens/multimidia.png')" onmouseout="mudaFoto('imagens/contato.png')" href="multimidia.html">Multimídia</a>
+      <a onmouseover="mudaFoto('imagens/contato.png')" onmouseout="mudaFoto('imagens/contato.png')" href="fale-conosco.html">Fale conosco</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i></a>
+   </div>
+
+<hgroup>
+   <h4 class="cabeca1">Google Glass</h4>
+   <h4 class="cabeca2">A revolução do Google está chegando</h4>                 
+</hgroup>
+   <img id="icone" src="imagens/contato.png" alt="usando o google glass">
+      <p>Otimizado para dispositivos móveis</p>
+</header>
+
+<section id="corpo-full">  
+                  
+   <article id="noticia-principal">
+   
+   <header id="cabecalho-artigo">
+   
+      <hgroup>
+         <h3 style="font-size: 22px">Fale Conosco - Contato</h3>
+         <h1>Formulário de Contato</h1>
+         <h2>por Odirlei Machado</h2>
+         <h class="atualizado">Atualizado em 16/Abril/2018</h3>
+      </hgroup>
+   
+   </header>
+
+   <form method="POST" id="fContato" action="machado.odd12@gmail.com" oninput="calctotal();">
+
+         <fieldset id="usuario"><legend>Identificação do Usuário</legend>
+            <p><label for="cNome">Nome:</label> <input type="text" name="tNome" id="cNome" size="20" maxlength="25" placeholder="Seu nome"></p>
+            <p><label for="cSenha">Senha:</label> <input type="password" name="tSenha" id="cSenha" size="10" maxlength="10" placeholder="Sua senha"></p>
+            <p><label for="cMail">E-mail:</label> <input type="email" name="tMail" id="cMail" size="20" maxlength="25" placeholder="Seu e-mail"></p>
+
+            <fieldset id="sexo"><legend>Sexo</legend> 
+               <input type="radio" name="tSexo" id="cMasc" checked> <label for="cMasc">Masculino</label> &nbsp; &nbsp;
+               <input type="radio" name="tSexo" id="cFem"> <label for="cFem">Feminino</label> 
+            </fieldset>
+            <p id="nascimento">Data de Nascimento:<input type="date" name="tNasc" id="cNasc"></p>
+            
+         </fieldset>
+
+         <fieldset id="endereco"><legend>Endereço do Usuário</legend>
+            <p><label for="cRua">Logradouro:</label> <input type="text" name="tRua" id="cRua" size="15" placeholder="Rua ou Avenida"></p>          
+            <p><label for="cNum">Número:</label> <input type="number" name="tNum" id="cNum" min="1" max="99999" > </p>                      
+            <p><label for="cEst">Estado:</label>
+            <select name="tEst" id="cEst">
+
+               <optgroup label="Região Sudeste">
+                  <option value=""></option>
+                  <option value="RJ">Rio de Janeiro</option>
+                  <option value="SP">São Paulo</option>
+                  <option value="MG">Minas Gerais</option>  
+               </optgroup>
+
+               <optgroup label="Região Sul">
+                  <option value="SC">Santa Catarina</option>
+                  <option value="PR">Paraná</option>
+                  <option value="RS">Rio Grande do Sul</option>
+               </optgroup>       
+            </select></p> 
+
+            <p><label for="cCid">Cidade:</label>
+            <input type="text" name="tCid" id="cCid" size="20" maxlength="25" placeholder="Sua Cidade" list="cidades"></p>
+            <datalist id="cidades">
+               <option value="São Paulo"></option>
+               <option value="São Paulo"></option>
+               <option value="Campinas"></option>
+               <option value="Santos"></option>
+               <option value="Presidente Prudente"></option>
+               <option value="Barretos"></option>
+            </datalist>         
+
+         </fieldset>
+
+         <fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
+            <p><label for="cUrg">Grau de Urgência:</label><br>
+            Mín<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2">Máx</p> 
+            <p><label for="cMsg">Mensagem:</label>
+            <textarea name="tMsg" id="cMsg" cols="30" rows="3" placeholder="Deixe sua mensagem"></textarea></p>                 
+         </fieldset>
+
+
+         <fieldset id="pedido"><legend>Quero um Google Glass</legend>
+            <p><label for="cPed"><input type="checkbox" name="tPed" id="cPed" checked>Gostaria de adquirir um Google Glass</label></p>
+            <p><label for="Ccor">Cor:</label>
+            <input type="color" name="tCor" id="cCor" value="#0000ff"></p>
+            <p><label for="cQtd">Quantidade:</label>
+            <input type="number" name="tQtd" id="cQtd" min="1" max="10" value="0"></p>
+            <p><label for="cTot">Preço Total: R$</label>
+            <input type="text" name="tTot" id="cTot" placeholder="Total a pagar" readonly></p>
+   
+         </fieldset>
+
+         <input type="image" name="tEnviar" src="imagens/botao-enviar.png">
+
+   </form>
+    
+   </article>
+   </section>
+
+   <div class="whatsapp-fixo">
+      <a href="https://api.whatsapp.com/send?phone=5519988168088">
+      <img class="zap-zap" src="imagens/zap.png" width="LARGURA" height="ALTURA" alt="Fale Conosco pelo WhatsApp"/> 
+      </a>
+   </div>
+
+
+   <footer id="rodape">
+      <p>Copyright &copy; 2018 - by Odirlei Machado <br>
+         <a href="https://pt-br.facebook.com/gustavoguanabara" target="_blank" rel="noopener noreferrer">Facebook</a>  | <a href="https://twitter.com/guanabara" target="_blank" rel="noopener noreferrer">Twitter</a> </p>
+   </footer>
+         
+
+</body>
+</html>
+

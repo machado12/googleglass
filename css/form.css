@@ -1,0 +1,153 @@
+@charset "utf-8";
+
+/* Dispositivos móveis */
+@media screen and (max-width:600px){
+ 
+form{
+  width: 280px;
+  margin: auto;
+}
+ 
+input, textarea{
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 11pt;
+  background-color: rgba(255,255,255,.5);
+} 
+
+input:hover, textarea:hover{
+ background-color: rgb(184, 174, 161);
+}
+
+legend{
+  color: #888888;
+  font-weight: bold;font-size: 14pt;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+fieldset{
+  border: 1px black solid;
+  margin: 10px;
+}
+
+fieldset p {
+  text-align: left;
+  margin-left: 25px;
+}
+
+label{
+  text-align: auto;
+  margin-left: 5px;
+}
+
+fieldset#sexo{
+  text-align: center;
+}
+
+#usuario{
+  background: url("../imagens/icone-contato.png") no-repeat 95% 40%;
+}
+
+#endereco{
+  background: url("../imagens/icone-endereco.png") no-repeat 95% 40%;
+}
+
+#mensagem{
+  background: url("../imagens/icone-mensagem.png") no-repeat 95% 40%;
+}
+
+#pedido{
+  background: url("../imagens/icone-pagamento.png") no-repeat 95% 40%;
+}
+
+
+#nascimento{
+ text-align: left;
+}
+
+}
+
+
+/* Telas de computadores */
+
+@media screen and (min-width:600px){
+ 
+form{
+ width: 500px;
+ margin: auto;
+}
+
+input, textarea{
+ font-family: sans-serif;
+ font-weight: normal;
+ font-size: 15pt;
+ background-color: rgba(255,255,255,.5);
+} 
+
+input:hover, textarea:hover{
+ background-color: rgb(184, 174, 161);
+}
+legend{
+  color: #888888;
+  font-weight: bold;font-size: 19pt;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+fieldset{
+  border: 1px black solid;
+  margin: 20px;
+}
+
+fieldset#sexo{
+  text-align: center;
+}
+
+label{
+  text-align: center;
+  text-align: left;
+}
+
+fieldset#mensagem p{
+  text-align: center;
+}
+
+fieldset#pedido p{
+  text-align: left;
+}
+
+fieldset#pedido{
+  text-align: center ;
+}
+
+#usuario{
+  background: url("../imagens/icone-contato.png") no-repeat 95% 40%;
+}
+
+#endereco{
+  background: url("../imagens/icone-endereco.png") no-repeat 95% 40%;
+}
+
+#mensagem{
+  background: url("../imagens/icone-mensagem.png") no-repeat 95% 40%;
+}
+
+#pedido{
+  background: url("../imagens/icone-pagamento.png") no-repeat 95% 40%;
+}
+
+
+
+#nascimento{
+ text-align: left;
+}
+
+}
+
+
+
+
+
+
+

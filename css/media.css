@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+@media screen and (max-width: 600px){
+
+ #tv-radio img{
+  width: 320px;
+  height: 230px;
+  margin-left: -8.5px;
+  padding-top: 20px;
+ }
+ 
+ #musica{
+  display: block;
+  position: relative;
+  left: 195px;
+  top: -30.5px;
+  width: 108px;
+  height: 18px;
+ }
+ 
+ #video{
+  display: block;
+  position: relative;
+  left: 20.5px;
+  top: -185px;
+  width: 164px;
+ }
+
+}
+
+/* Dispositivos maiores de 600px */
+
+@media screen and (min-width:601px){
+
+#tv-radio img{
+ width: 1000px;
+ height: 550px;
+ margin-left: 40px;
+}
+
+#musica{
+ display: block;
+ position: relative;
+ left: 690px;
+ top: -83px;
+ width: 310px;
+}
+
+#video{
+ display: block;
+ position: relative;
+ left: 127px;
+ top: -512px;
+ width: 508px;
+}
+
+}
+
