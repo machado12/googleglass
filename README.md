@@ -1,6 +1,6 @@
 # Google Glass
 
-[GoogleGlass](https://machado12.github.io/googleglass/index.html)
+Veja on-line - [GoogleGlass](https://machado12.github.io/googleglass/index.html)
 
 <img src="/imagens/glass1.png" >
 <img src="/imagens/glass2.png" >
